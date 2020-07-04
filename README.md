@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-
-# mern-tshirt-store
+# Mern-tshirt-store
 
 An ecommerce MERN store
 
-> > > > > > > origin/master
+Link
