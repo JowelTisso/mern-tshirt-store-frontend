@@ -1,0 +1,26 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+  font-size: small;
+}
+
+body {
+  background: #e7e8e9;
+  font-size: smaller;
+}
+
+footer {
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* 
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+} */
