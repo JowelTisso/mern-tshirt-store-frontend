@@ -1,2 +1,2 @@
-# mern-picklestore
+# mern-tshirt-store
 An ecommerce MERN store
