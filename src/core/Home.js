@@ -3,7 +3,7 @@ import "../styles.css";
 import Base from "./Base";
 import Card from "./Card";
 import { getProducts } from "./helper/coreapicalls";
-import { loadCart } from "./helper/cartHelper";
+import { loadCart, createCart } from "./helper/cartHelper";
 import { emptyOrderSummary } from "./helper/orderHelper";
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
   const [reload, setReload] = useState(false);
 
   emptyOrderSummary();
+  createCart();
 
   const loadAllProducts = () => {
     return getProducts().then((data) => {
