@@ -46,8 +46,10 @@ const UserDashBoard = () => {
       classNameForTopContainer=" bg-white text-dark text-center pt-4"
     >
       <div className="row">
-        <div className="col-2 ">{UserDashBoardLeft()}</div>
-        <div className="col-10  rounded text-white">{UserDashBoardRight()}</div>
+        <div className="col-md-2 ">{UserDashBoardLeft()}</div>
+        <div className="col-md-10  rounded text-white">
+          {UserDashBoardRight()}
+        </div>
       </div>
     </Base>
   );

@@ -168,11 +168,11 @@ const Card = ({
         <div className="">
           <div className="card-header lead">{cardTitle}</div>
           <div className="row">
-            <div className="col-3 ">
+            <div className="col-md-3 ">
               <ImageHelper product={product} />
               {showItemCount(showItemCountChecker)}
             </div>
-            <div className="col">
+            <div className="col-md">
               <div className="card-body">
                 {getaRedirect(redirect)}
 

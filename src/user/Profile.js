@@ -261,8 +261,8 @@ const Profile = () => {
       classNameForTopContainer=" bg-white text-dark text-center pt-4"
     >
       <div className="row mb-5">
-        <div className="col-2 ">{UserDashBoardLeft()}</div>
-        <div className="col-10 p-3 bg-secondary rounded text-white ">
+        <div className="col-md-2 mb-2 ">{UserDashBoardLeft()}</div>
+        <div className="col-md-10 p-3 bg-secondary rounded text-white ">
           <div className="row">
             <h2 className="col-3 lead font-weight-normal">
               Profile Information

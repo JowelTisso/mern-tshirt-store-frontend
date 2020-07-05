@@ -40,10 +40,10 @@ export default function Home() {
       <div className="row text-center">
         <h4 className="text-dark">All of tshirts</h4>
         <h5 className="col text-right text-info">Cart {cartItemCount}</h5>
-        <div className="row">
+        <div className="row card-container">
           {products.map((product, index) => {
             return (
-              <div key={index} className="col-3 mb-4">
+              <div key={index} className="col-md-3 mb-4">
                 <Card
                   product={product}
                   home={true}

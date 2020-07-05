@@ -160,21 +160,23 @@ export default function Cart() {
   return (
     <Base title="Cart Page" description="Ready to chekout">
       <div className="row text-center border">
-        <div className="col-7 ">
+        <div className="col-md-7 ">
           {products.length > 0 ? loadAllProducts(products) : loadOrderSummary()}
         </div>
-        <div className="col ">
+        <div className="col-md ">
           {loadCheckout()}
           <Paymentb products={products} setReload={setReload} />
         </div>
       </div>
-      <div className="text-dark p-3 bg-white mt-3 mb-5">
-        <h6>Test Card :</h6>
-        <p>4000111111111115</p>
-        <p>12/21</p>
-        <h6>Test Paypal : </h6>
-        <p>sb-paqt62324461@personal.example.com</p>
-        <p>Wsl]v9?E</p>
+      <div className="row">
+        <div className="text-dark p-3 col-md  bg-white mt-3 mb-5">
+          <h6>Test Card :</h6>
+          <p>4000111111111115</p>
+          <p>12/21</p>
+          <h6>Test Paypal : </h6>
+          <p>sb-paqt62324461@personal.example.com</p>
+          <p>Wsl]v9?E</p>
+        </div>
       </div>
     </Base>
   );

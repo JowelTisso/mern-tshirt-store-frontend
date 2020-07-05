@@ -47,10 +47,10 @@ export default function ManageProducts() {
           {products.map((product, index) => {
             return (
               <div key={index} className="row text-center mb-2 ">
-                <div className="col-4">
+                <div className="col-md-4">
                   <h3 className="text-dark text-left">{product.name}</h3>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4 mb-2">
                   <Link
                     className="btn btn-success"
                     to={`/admin/product/update/${product._id}`}
@@ -58,7 +58,7 @@ export default function ManageProducts() {
                     <span className="">Update</span>
                   </Link>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4">
                   <button
                     onClick={() => {
                       deleteThisProduct(product._id);

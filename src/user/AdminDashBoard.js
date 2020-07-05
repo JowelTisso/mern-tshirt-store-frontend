@@ -65,8 +65,8 @@ const AdminDashBoard = () => {
       className="container-fluid bg-success p-2"
     >
       <div className="row">
-        <div className="col-2">{adminLeftSide()}</div>
-        <div className="col-10">{adminRightSide()}</div>
+        <div className="col-md-2 mb-2">{adminLeftSide()}</div>
+        <div className="col-md-10">{adminRightSide()}</div>
       </div>
     </Base>
   );
