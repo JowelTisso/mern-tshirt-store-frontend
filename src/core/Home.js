@@ -20,6 +20,7 @@ export default function Home() {
         setError(data.error);
       } else {
         setProducts(data);
+        console.log(data);
       }
     });
   };
