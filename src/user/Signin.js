@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { PulseLoader } from "react-spinners";
 import Base from "../core/Base";
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { signin, authenticate, isAuthenticated } from "../auth/helper";
 
 const Signin = () => {
@@ -54,8 +55,8 @@ const Signin = () => {
   const loadingMessage = () => {
     return (
       loading && (
-        <div className="alert alert-info">
-          <h2>Loading...</h2>
+        <div className="text-center">
+          <PulseLoader size={20} color={"#123abc"} loading={loading} />
         </div>
       )
     );

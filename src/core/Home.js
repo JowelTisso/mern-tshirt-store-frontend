@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles.css";
 import Base from "./Base";
 import Card from "./Card";
+import { ClipLoader } from "react-spinners";
 import { getProducts } from "./helper/coreapicalls";
 import { loadCart, createCart } from "./helper/cartHelper";
 import { emptyOrderSummary } from "./helper/orderHelper";
@@ -13,6 +14,7 @@ export default function Home() {
 
   emptyOrderSummary();
   createCart();
+  console.log(products);
 
   const loadAllProducts = () => {
     return getProducts().then((data) => {
@@ -31,6 +33,16 @@ export default function Home() {
   //To store cart count in the homepage
   let cartItem = loadCart();
   let cartItemCount = cartItem.length;
+
+  const loadingScreen = () => {
+    return (
+      <div className="row" style={{ height: "300px" }}>
+        <div className=" mx-auto my-auto col-1">
+          <ClipLoader size={50} color={"#36D7B7"} loading={true} />
+        </div>
+      </div>
+    );
+  };
 
   return (
     <Base
@@ -56,6 +68,8 @@ export default function Home() {
           })}
         </div>
       </div>
+
+      {products.length === 0 && loadingScreen()}
     </Base>
   );
 }
